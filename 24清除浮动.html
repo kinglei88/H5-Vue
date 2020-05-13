@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*#box1{width: 100px; height: 100px; background-color: red; float: left;} 
+			#box2{width: 200px; height: 200px; background-color: blue; clear: both;}*/
+			
+			#box1{width: 200px; border: 1px black solid;}
+			#box2{width: 100px; height: 100px; background-color: red; float: left;}
+			.clear:after{content: ''; clear: both; display: block;}
+			
+			/*clear属性 只对块起作用 所以要先转换成块 再 clear*/	
+			
+		</style>
+		
+	</head>
+	<body>
+		<!--<div id="box1"></div>
+		<div id="box2"></div>-->
+		
+		<div id="box1"class="clear">
+			<div id="box2"></div>
+			<!--<div style="clear: both;"></div>-->  
+			<!--空标签清除浮动-->
+			
+		</div>
+		aaaa
+
+	</body>
+</html>
+
+
+
+
+<!--
+如何清除浮动:
+	1.上下排列  clear属性 表示清除浮动的 left right both
+	2.嵌套排列：固定宽高
+			    父元素浮动
+			  overflow
+			  display
+			     设置空标签
+			  after伪类
+-->

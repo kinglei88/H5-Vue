@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			a{text-decoration: none; color: #6A5ACD;}
+			a:hover{color: red;}
+		</style>
+	</head>
+	<body>
+		
+		<div>这是一个块</div>
+		<h1>hello world</h1>
+		<a href="">这是一个链接</a>
+		
+		<div style="border: 1px black double;">
+			<!--<img src="img/2.jpg" style="vertical-align: bottom;"/>xyz-->
+			<img src="img/2.jpg" style="display: block;"/>
+			
+		</div>
+		
+		
+		
+	</body>
+</html>
+
+
+
+<!--
+	重置css默认样式
+	
+	*{margin:0 ; padding:0;}
+	ul{list-style:none;}
+	a{text-decoration: none; color: #6A5ACD;}
+	img{display:block} 
+		图片跟容器底部有一些空隙
+			内联元素的对齐方式是按照文字基线对齐的，而不是文字底线对齐的
+			 vertical-align:baseline; 基线对齐方式 默认
+			 img{vertical-align:bottom;} 解决方式是推荐的
+	
+	写具体页面的时候 或者 一个布局效果的时候
+		1.写结构
+		2.css重置样式
+		3.写具体样式
+	
+-->

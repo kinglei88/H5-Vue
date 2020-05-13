@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{height: 10000px;}
+			/*#box1{width: 100px; height: 100px; background: red;}*/
+			/*#box2{width: 100px; height: 100px; background: blue; position: relative; left: 100px;top: 100px;}*/      /*相对定位*/
+			/*#box3{width: 100px; height: 100px; background: yellow;}*/ 
+			
+			/*#box1{width: 100px; height: 100px; background: red; position: absolute;}*/
+			/*#box2{width: 200px; height: 200px; background: blue;}*/
+			/*span{width: 100px; height: 100px; background: red; position: absolute;}*/
+			/*div{background: red; position: absolute;}*/   
+			
+			/*#box1{width: 300px; height: 300px; border: 1px black solid; margin: 200px; position: relative;}
+			#box2{width: 100px; height: 100px; background: red; position: absolute; left: 0; top: 0;}*/                 /*绝对定位*/
+			
+			/*div{position: fixed; right: 0; bottom: 0;}*/                                                            /*固定定位*/
+			
+			/*div{background: red; position: sticky; top: 0;} */                                                          /*黏性定位*/
+			
+			/*#box1{width: 100px; height: 100px; background: red; position: absolute;}*/
+			/*#box2{width: 100px; height: 100px; background: blue; position: absolute; left: 50px; top: 50px;}*/           /*层级*/
+			
+			#parent{width: 100px; height: 100px; border: 1px black solid; position: absolute; z-index: -2;}
+			#box1{width: 100px; height: 100px; background: red; position: absolute; z-index: 0;}
+			#box2{width: 100px; height: 100px; background: blue; position: absolute; left: 50px; top: 50px; z-index: -1;}
+			
+		</style> 
+	</head>
+	<body>
+		<!--<div id="box1"></div>-->
+		<!--<div id="box2"></div>-->
+		<!--<div id="box3"></div>-->
+
+		<!--<div id="box1"></div>-->
+		<!--<div id="box2"></div>-->
+		<!--<span>这是一个内联的</span>-->
+		<!--<div>这是一个块</div>-->
+		
+		<!--<div id="box1">
+			<div id="box2">
+			</div>123
+		</div>-->
+		
+		<!--<div>这是一个块</div>-->
+		
+		<!--<p>aaaa</p>
+		<p>aaaa</p>
+		<p>aaaa</p>
+		<p>aaaa</p>
+		<p>aaaa</p>
+		<p>aaaa</p>
+		<div>这是一个块</div>
+		<p>aaaa</p>
+		<p>aaaa</p>
+		<p>aaaa</p>
+		<p>aaaa</p>
+		<p>aaaa</p>
+		<p>aaaa</p>-->
+		
+		<!--<div id="box1"></div>-->
+		<!--<div id="box2"></div>-->
+		
+		<div id="parent">
+			<div id="box1"></div>
+		</div>
+		<div id="box2"></div>
+		
+		
+		
+
+		
+	</body>
+</html>

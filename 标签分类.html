@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<style type="text/css">
+		
+			body{
+				font-size: 0;
+			}
+			#content1{width: 100px; height: 100px; background-color: red; font-size: 16px;}
+			#content2{width: 100px; height: 100px; background-color: blue; font-size: 16px;}
+			img{width: 100px; height: 100px;}
+			
+		</style>
+		
+		
+	</head>
+	<body>
+		
+		<!--<span id="content1">内联1内联1内联1内联1内联1内联1内联1内联1内联1内联1内联1内联1内联1内联1</span>-->
+		<!--<span id="content2">内联2</span>-->
+		
+		
+		<img src="img/1.png"/>
+		
+		
+		
+	</body>
+</html>
+
+<!--
+	按类型:
+		块（block）:div p ul li h1 ...
+			1、独占一行
+			2、支持所有样式
+			3、不写宽的时候，跟父元素的宽相同
+			4、所占区域是一个矩形
+
+		内联（inline）:span a em strong img ...
+			1、挨在一起的
+			2、有些样式不支持，例如：margin padding width height 
+			3、不写宽的时候 宽度由内容定
+			4、所占区域不一定是矩形
+			5、内联标签之间有空隙 原因：换行造成的
+			
+		3.内联块（block-inline）:input select ...
+			1、挨在一起，但是支持宽高
+		
+		
+		注：布局一般用块标签,修饰文本一般用内联标签
+-->
+	
+	

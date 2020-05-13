@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>test</title>
+		
+		<style type="text/css">
+		
+			#div1{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				margin-bottom: 70px; }     /*margin叠加问题,会取值较大的作为叠加的值*/
+			
+			#div2{
+				width: 200px;
+				height: 200px;
+				background: salmon;
+				margin-top: 100px;
+			}
+			
+			
+			
+			/*#div1{width: 200px; height: 200px; background-color: red; padding-top:100px ; box-sizing: border-box;}
+			#div2{width: 100px; height: 100px; background-color: blue; }*/
+
+			/*margin-top会传递:*/
+			/*在父边框中 改用padding*/
+			
+			
+			
+			
+		</style>
+		
+		
+	</head>
+	<body>
+		
+		<!--<div id="div1"></div>-->
+		<!--<div id="div2"></div>-->
+		
+		
+		<div id="div1">
+			
+			<div id="div2">
+				
+			</div>
+			
+		</div>
+		
+	
+	
+	</body>
+</html>

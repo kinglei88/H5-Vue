@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<style type="text/css">
+			/*div{width: 100px; height: 100px; background: red; display: inline-block;}	
+			span{width: 100px; height: 100px;background: red; display: inline-block;}
+			input{display: none;}*/
+			
+			#div1,#div2{width: 100px;height: 100px;background: red;}
+			/*#div1{display: none;} */    /*display:none 是不占空间的 块2会提上去*/
+			#div1{visibility: hidden;}    /*visibility: hidden; 会占空间的 块2不会提上去*/
+			
+		</style>
+		
+		
+	</head>
+	<body>
+		<div id="div1">块1</div>
+		<div id="div2">块2</div>
+		
+		
+		<!--<span>a</span>
+		<span>b</span>
+		
+		<input type="text" name="" id="" value="" />-->
+		
+	</body>
+</html>
