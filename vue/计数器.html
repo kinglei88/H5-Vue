@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="app">
+			<button v-on:click=doit>-</button>
+			<div>{{message}}</div>
+			<button @click=doitt>+</button>	
+		</div>
+
+				
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+	
+		<script >
+			
+			var app = new Vue({
+				
+				el:'#app',
+				data:{
+					message:'1'
+				},
+				
+				methods:{
+					doit:function(){
+						if(this.message==0){
+							alert('过少')
+							
+						}else{
+							this.message-=1
+						}
+						
+						
+					},
+					doitt:function(){
+						if(this.message==10){
+							alert('超出')
+						}else{
+							this.message+=1
+						
+						}
+						
+						
+					}
+					
+					  
+					
+					
+				}
+				
+				
+			})
+			
+		
+		
+
+			
+		</script>
+
+	
+	</body>
+	
+	
+</html>

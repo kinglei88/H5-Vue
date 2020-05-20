@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<div id="app">
+			
+			<button @click=add>添加</button>
+			<button @click=sub>删除</button>			
+			
+			
+			<ul>
+				<li v-for='(item,index) in num_array'>{{index+1}}{{item}}</li>
+			</ul>
+			
+			<ul>
+				<li v-for='(item,index) in info_list'>{{index+1}}、{{item.name}}&nbsp;{{item.age}}</li>
+				
+			</ul>
+			
+			
+		</div>
+		
+		
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		
+		<script>
+			
+			var app = new Vue({
+				el:'#app',
+				data:{
+					num_array:[1,2,3,4,5],
+					info_list:[
+						{'name':'wl','age':18},
+						{'name':'zhw','age':13},
+						{'name':'lzl','age':12},
+						{'name':'wzc','age':11},
+					
+					
+					]
+					
+				},
+				
+				methods:{
+					
+					add:function(){
+						this.info_list.push({'name':'hsy','age':10})
+					},
+					sub:function(){
+						this.info_list.shift()
+					}
+					
+					
+				}
+				
+				
+				
+				
+				
+				
+			})
+			
+			
+		</script>
+		
+		
+		
+	</body>
+</html>

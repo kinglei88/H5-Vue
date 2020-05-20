@@ -1,0 +1,49 @@
+  <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="app">
+			
+			<input type="text" v-model="message" @keyup.enter="getM"/>
+			<div>{{message}}</div>
+			<input type="button" @click="setM" />
+			
+		</div>
+		
+		
+		
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		
+		<script>
+			var app = new Vue({
+				el:'#app',
+				data:{
+					message:'hello world',
+				},
+				
+				methods:{
+					getM:function(){
+						alert(this.message)
+					},
+					setM:function(){
+						
+						this.message = 'nihao'
+						
+						
+					}
+				}
+				
+				
+			})
+			
+			
+			
+		</script>
+		
+
+
+	</body>
+</html>

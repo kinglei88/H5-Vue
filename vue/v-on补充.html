@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<div id="app">
+			<button @click=doit('wl','lj')>点击</button>
+			<input type="text" @keydown='doit2' />
+			
+		</div>
+		
+		
+		
+		
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+		<script>
+			
+			var app = new Vue({
+				
+				el:'#app',
+				methods:{
+					
+					doit:function(p1,p2){
+						console.log(p1)
+						console.log(p2)
+					},
+					doit2:function(){
+						alert('love')
+					},
+					
+					
+					
+					
+				}
+				
+				
+			})
+			
+			
+			
+			
+		</script>
+
+
+
+	</body>
+</html>

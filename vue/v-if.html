@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--v-if 是使整个dom消失 v-show只是改变样式 将display改成none-->
+		
+		
+		<div id="app">
+			
+			<p v-if='isShow'>123</p>
+			<button @click='doit'>aaa</button>
+			
+			
+			
+			<p v-if='age>=18'>456</p>
+			<div>{{age}}</div>
+			<button @click=add>+</button>
+			<button @click=sub>-</button>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+		
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script>
+			
+			var app = new Vue({
+				
+				el:'#app',
+				
+				data:{
+					isShow:false,
+					age:18
+				},
+				
+				
+				methods:{
+					doit:function(){
+						this.isShow = !this.isShow
+					},
+					
+					add:function(){
+						this.age+=1
+					},
+					
+					sub:function(){
+						this.age-=1
+					}
+					
+				},
+					
+				
+				
+				
+				
+				
+				
+			})
+			
+			
+		</script>
+		
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>
